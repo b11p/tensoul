@@ -10,7 +10,7 @@ const config = {
     // JP: https://game.mahjongsoul.com
     base: process.env.MJS_BASE,
     // can be null
-    gateway: process.env.MJS_GATEWAY,
+    gateway: null,
     timeout: 10000,
   },
 
@@ -26,7 +26,7 @@ const config = {
       sale_platform: 'web',
       software: 'Chrome',
     },
-    random_key: '1a5675c3-fcaf-495e-a147-320050388cd0',
+    random_key: process.env.RANDOM_KEY,
     reconnect: false,
   },
 
